@@ -2199,7 +2199,7 @@ tee_surface_index (PycairoTeeSurface *obj, PyObject *args) {
     return NULL;
 
   return PycairoSurface_FromSurface (
-    cairo_surface_reference (cairo_tee_surface_index (obj->surface, index)),
+    cairo_surface_reference (tee_surface_index (obj->surface, index)),
     NULL);
 }
 
